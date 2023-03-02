@@ -96,11 +96,11 @@ def manager_init() -> None:
     ("TenesiBrakeSelect", "3"),  # 브레이킹작동시 허드에 표시하기
     ("Boost_s", "5"),  # 악셀 부스트 적용 영역 지정- 정지후 적용키로
     ("Creep_Speed_Start", "8"),  # 악셀 부스트 적용 영역 지정- 정지후 적용키로
-    ("Boost_v", "30"),  # 악셀 부스트 적용 영역 지정- SCC 속도범위지정
-    ("Creep_Speed_Scc", "70"),  # 악셀 부스트 적용 영역 지정- SCC 속도범위지정
+    ("Boost_v", "25"),  # 악셀 부스트 적용 영역 지정- SCC 속도범위지정
+    ("Creep_Speed_Scc", "40"),  # 악셀 부스트 적용 영역 지정- SCC 속도범위지정
     ("Lane_Change", "70"),  # 자동 레인 체인지 속도
     ("Tenesi_Gas_Factor", "20"),  # Scc스무서 상태에서 가속이 더디어서 셋팅
-    ("TenesiSccStopCost", "30"),  # Scc스무서 상태에서 가속이 더디어서 셋팅
+    ("TenesiSccStopCost", "30"),  # Scc스무서 상태에서 정지시 부드럽게 브레이크 감도조절 셋팅
   ]
   if not PC:
     default_params.append(("LastUpdateTime", datetime.datetime.utcnow().isoformat().encode('utf8')))

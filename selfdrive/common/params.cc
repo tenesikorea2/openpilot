@@ -239,7 +239,7 @@ std::unordered_map<std::string, uint32_t> keys = {
     {"Creep_Speed_Scc", PERSISTENT}, // 악셀 부스트 적용 영역 지정- SCC 속도범위지정
     {"Lane_Change", PERSISTENT}, // 차로 변경 가능한 속도 설정
     {"Tenesi_Gas_Factor", PERSISTENT}, // 차로 변경 가능한 속도 설정
-    {"TenesiSccStopCost", PERSISTENT}, // 차로 변경 가능한 속도 설정
+    {"TenesiSccStopCost", PERSISTENT}, // Scc스무서 상태에서 정지시 부드럽게 브레이크 감도조절 셋팅
 };
 
 } // namespace
