@@ -66,10 +66,10 @@ void SshControl::getUserKeys(const QString &username) {
 
 GitHash::GitHash() : AbstractControl("커밋", "") {
 
-  QString lhash = QString::fromStdString(params.get("GitCommit").substr(0, 80));
+  QString lhash = QString::fromStdString(params.get("Version").substr(0, 80));
   hlayout->addStretch(1);
 
-  local_hash.setText(QString::fromStdString(params.get("GitCommit").substr(0, 80)));
+  local_hash.setText(QString::fromStdString(params.get("Version").substr(0, 80)));
   local_hash.setStyleSheet("color: #0099ff");
   hlayout->addWidget(&local_hash);
 }
